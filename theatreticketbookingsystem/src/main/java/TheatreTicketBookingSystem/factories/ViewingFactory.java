@@ -5,9 +5,6 @@ import TheatreTicketBookingSystem.domain.*;
 import java.util.Date;
 import java.util.Map;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 public class ViewingFactory {
     public static Viewing getShow(Map<String, Object> values){
         Viewing factoryShow = new Viewing.Builder()

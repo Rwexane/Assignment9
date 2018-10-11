@@ -7,9 +7,6 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by Tristan on 2017/11/04.
- */
 public class SciFiFactoryTest {
 
     SciFi movie;

@@ -7,9 +7,6 @@ import TheatreTicketBookingSystem.domain.Viewing;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 public class HorrorFactory {
     public static Horror getHorror(Map<String, Object> values){
         Horror factoryHorror = new Horror.Builder()

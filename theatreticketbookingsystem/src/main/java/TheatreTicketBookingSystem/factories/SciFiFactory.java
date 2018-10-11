@@ -5,9 +5,6 @@ import TheatreTicketBookingSystem.domain.SciFi;
 
 import java.util.Map;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 public class SciFiFactory {
     public static SciFi getSciFi(Map<String, Object> values){
         SciFi factorySciFi = new SciFi.Builder()

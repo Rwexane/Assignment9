@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title><Home></title>
+			<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+	<style type = "text/css">
+		body {
+			background-color: grey;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			
+			
+			display: inline;
+			
+			
+		}
+		
+		.navbar {
+			background-color: #333;
+			float: left;
+			min-width: 100%;
+			max-width: 100%;
+		}
+
+		li.bar{
+			float: left;			
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: white;
+			color: #000;
+		}
+		
+		.navRight{
+			float: right;
+		}
+		
+		.register{
+			background-color: blue;
+		}
+
+		.tabbed {
+			padding-left: 4em;
+		}
+
+		.seat{
+
+		}
+		
+		#title{
+			text-align: center;
+			color: white;
+		}
+		
+		</style>
+  
+		</head>
+		<body onload = "header(),footer()">		
+		<script src= "partialViews.js"></script>
+		<?html?>
+		<form method="GET" action= "<?html ?>" >
+		
+		<div id="header"></div>
+
+		<center>
+		<div id="movie">
+			<h3> Choose a movie: </h3>
+				<select id="selectMovie">
+					<option id="blank">--Please select movie--</option>
+					<option id="movie_id">Movie Name</option>
+				</select>
+				<span class="tabbed"></span>
+				<input type='button' id="movieBtn" value='Check times'></input>
+			
+		</div>
+
+		<br/>
+
+		<div id="time" style="display:none">
+			<h3> Select a time: </h3>
+				<select id="selectTime">
+					<option id="blank">--Please select time--</option>
+					<option id="show_id">Time e.g 17:00</option>
+				</select>
+				<span class="tabbed"></span>
+				<input type="button" id="timeBtn" value='Book seats'></input>
+		</div>
+
+		<br/>
+		<br/>
+		<br/>
+		
+		<div id="seats" style="display:none">
+		<h3> Choose seats: </h3>
+		<table width="80%"><tr><td style="background-color:blue;color:white"><center><h4>SCREEN</h4></center></td></tr></table>
+
+		<table width="80%">
+		<tr>
+			<td>
+				<ul>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='2A'>2A</input></li>
+					<li class="seat"> <input type="checkbox"id='3A'>3A</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6A'>6A</input></li>
+					<li class="seat"> <input type="checkbox"id='7A'>7A</input></li>
+					<li class="seat"> <input type="checkbox"id='8A'>8A</input></li>
+					<li class="seat"> <input type="checkbox"id='9A'>9A</input></li>
+					<li class="seat"> <input type="checkbox"id='10A'>10A</input></li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='2B'>2B</input></li>
+					<li class="seat"> <input type="checkbox"id='3B'>3B</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6B'>6B</input></li>
+					<li class="seat"> <input type="checkbox"id='7B'>7B</input></li>
+					<li class="seat"> <input type="checkbox"id='8B'>8B</input></li>
+					<li class="seat"> <input type="checkbox"id='9B'>9B</input></li>
+					<li class="seat"> <input type="checkbox"id='10B'>10B</input></li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='2B'>2C</input></li>
+					<li class="seat"> <input type="checkbox"id='3B'>3C</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6A'>6C</input></li>
+					<li class="seat"> <input type="checkbox"id='7A'>7C</input></li>
+					<li class="seat"> <input type="checkbox"id='8A'>8C</input></li>
+					<li class="seat"> <input type="checkbox"id='9A'>9C</input></li>
+					<li class="seat"> <input type="checkbox"id='10A'>10C</input></li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li class="seat"> <input type="checkbox"id='1E'>1E</input></li>
+					<li class="seat"> <input type="checkbox"id='2E'>2E</input></li>
+					<li class="seat"> <input type="checkbox"id='3E'>3E</input></li>
+					<li class="seat"> <input type="checkbox"id='4E'>4E</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6E'>6E</input></li>
+					<li class="seat"> <input type="checkbox"id='7E'>7E</input></li>
+					<li class="seat"> <input type="checkbox"id='8E'>8E</input></li>
+					<li class="seat"> <input type="checkbox"id='9E'>9E</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li class="seat"> <input type="checkbox"id='1E'>1E</input></li>
+					<li class="seat"> <input type="checkbox"id='2E'>2E</input></li>
+					<li class="seat"> <input type="checkbox"id='3E'>3E</input></li>
+					<li class="seat"> <input type="checkbox"id='4E'>4E</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6E'>6E</input></li>
+					<li class="seat"> <input type="checkbox"id='7E'>7E</input></li>
+					<li class="seat"> <input type="checkbox"id='8E'>8E</input></li>
+					<li class="seat"> <input type="checkbox"id='9E'>9E</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li class="seat"> <input type="checkbox"id='1F'>1F</input></li>
+					<li class="seat"> <input type="checkbox"id='2F'>2F</input></li>
+					<li class="seat"> <input type="checkbox"id='3F'>3F</input></li>
+					<li class="seat"> <input type="checkbox"id='4F'>4F</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6F'>6F</input></li>
+					<li class="seat"> <input type="checkbox"id='7F'>7F</input></li>
+					<li class="seat"> <input type="checkbox"id='8F'>8F</input></li>
+					<li class="seat"> <input type="checkbox"id='9F'>9F</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li class="seat"> <input type="checkbox"id='1G'>1G</input></li>
+					<li class="seat"> <input type="checkbox"id='2G'>2G</input></li>
+					<li class="seat"> <input type="checkbox"id='3G'>3G</input></li>
+					<li class="seat"> <input type="checkbox"id='4G'>4G</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6G'>6G</input></li>
+					<li class="seat"> <input type="checkbox"id='7G'>7G</input></li>
+					<li class="seat"> <input type="checkbox"id='8G'>8G</input></li>
+					<li class="seat"> <input type="checkbox"id='9G'>9G</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li class="seat"> <input type="checkbox"id='1H'>1H</input></li>
+					<li class="seat"> <input type="checkbox"id='2H'>2H</input></li>
+					<li class="seat"> <input type="checkbox"id='3H'>3H</input></li>
+					<li class="seat"> <input type="checkbox"id='4H'>4H</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6H'>6H</input></li>
+					<li class="seat"> <input type="checkbox"id='7H'>7H</input></li>
+					<li class="seat"> <input type="checkbox"id='8H'>8H</input></li>
+					<li class="seat"> <input type="checkbox"id='9H'>9H</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li class="seat"> <input type="checkbox"id='1I'>1I</input></li>
+					<li class="seat"> <input type="checkbox"id='2I'>2I</input></li>
+					<li class="seat"> <input type="checkbox"id='3I'>3I</input></li>
+					<li class="seat"> <input type="checkbox"id='4I'>4I</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6I'>6I</input></li>
+					<li class="seat"> <input type="checkbox"id='7I'>7I</input></li>
+					<li class="seat"> <input type="checkbox"id='8I'>8I</input></li>
+					<li class="seat"> <input type="checkbox"id='9I'>9I</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='2K'>2K</input></li>
+					<li class="seat"> <input type="checkbox"id='3K'>3K</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6K'>6K</input></li>
+					<li class="seat"> <input type="checkbox"id='7K'>7K</input></li>
+					<li class="seat"> <input type="checkbox"id='8K'>8K</input></li>
+					<li class="seat"> <input type="checkbox"id='9K'>9K</input></li>
+					<li class="seat"> <input type="checkbox"id='10K'>10K</input></li>
+					 
+				</ul>
+			</td>
+
+			<td>
+				<ul>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='2L'>2L</input></li>
+					<li class="seat"> <input type="checkbox"id='3L'>3L</input></li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li style="background-color:gray;color:gray">NA</li>
+					<li class="seat"> <input type="checkbox"id='6L'>6L</input></li>
+					<li class="seat"> <input type="checkbox"id='7L'>7L</input></li>
+					<li class="seat"> <input type="checkbox"id='8L'>8L</input></li>
+					<li class="seat"> <input type="checkbox"id='9L'>9L</input></li>
+					<li class="seat"> <input type="checkbox"id='10L'>10L</input></li>
+					 
+				</ul>
+			</td>
+
+		</tr>
+		</table>
+
+		</div>
+
+		<br/>
+		</center>
+		<div id="footer"></div>
+		</form>
+		
+		<script src= "bookShow.js"></script>
+
+		</body>
+	</html>

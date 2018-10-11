@@ -4,9 +4,6 @@ import TheatreTicketBookingSystem.domain.Intefaces.Movie;
 import javax.persistence.*;
 import java.util.List;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 @Entity
 public class Horror implements Movie
 {
@@ -18,18 +15,8 @@ public class Horror implements Movie
     protected String title;
     protected String imagePath;
 
-//    public List<Viewing> getViewing() {
-//        return viewing;
-//    }
-//
     @OneToMany(mappedBy = "id")
     protected List<Viewing> viewing;
-//    @OneToOne
-//    private Reservation reservation;
-
-//    public Reservation getReservation() {
-//        return reservation;
-//    }
 
     public Horror() {
         int i = this.movie_id;
@@ -57,8 +44,6 @@ public class Horror implements Movie
         this.title = builder.title;
         this.imagePath = builder.imagePath;
         this.viewing = builder.viewing;
-   //     this.reservation = builder.reservation;
-
     }
 
     public static class Builder{

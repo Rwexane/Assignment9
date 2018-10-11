@@ -1,30 +1,22 @@
 package TheatreTicketBookingSystem.domain;
 
-import TheatreTicketBookingSystem.domain.Intefaces.Movie;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.List;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 @Entity
-public class Action //implements Movie
+public class Action
 {
     @Id
     @GeneratedValue
-    protected Long id;          // make stuff protected from the law
+    protected Long id;
     protected int duration;
     protected String title;
     protected String imagePath;
     @OneToMany()
     protected List<Viewing> viewing;
-//    @OneToOne
-//    private Reservation reservation;
-
-//    public Reservation getReservation() {
-//        return reservation;
-//    }
 
     public String getImagePath() { return imagePath; }
 
@@ -49,7 +41,6 @@ public class Action //implements Movie
         this.title = builder.title;
         this.imagePath = builder.imagePath;
         this.viewing = builder.viewing;
-  //      this.reservation = builder.reservation;
     }
 
     public static class Builder{

@@ -3,22 +3,15 @@ package TheatreTicketBookingSystem.domain;
 import javax.persistence.*;
 import java.util.ArrayList;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 @Entity
 public class Reservation {
     @Id
     @GeneratedValue
-    protected Long reservation_id;      //pk
-    //private ArrayList<Integer> seats;
+    protected Long reservation_id;
     protected int total_price;
 
-
-//    @ManyToOne(optional=false)
-//    private Viewing show;            //fk
     @ManyToOne(optional=false)
-    protected Customer customer;        //fk
+    protected Customer customer;
 
     @ManyToOne(optional=false)
     public Viewing viewing;
@@ -27,35 +20,25 @@ public class Reservation {
         return reservation_id;
     }
 
-   // public ArrayList<Integer> getSeats() {
-//        return seats;
-//    }
-
     public int getTotal_price() {
         return total_price;
     }
-
-//    public Viewing getShow() {
-//        return show;
-//    }
 
     public Customer getCustomer() {return customer;}
     public Reservation() {}
 
     public Reservation(Builder builder){
         this.reservation_id = builder.reservation_id;
-       // this.seats = builder.seats;
         this.total_price = builder.total_price;
-       // this.show = builder.show;
         this.customer = builder.customer_id;
     }
 
     public static class Builder{
-        private Long reservation_id;      //pk
+        private Long reservation_id;
         private ArrayList<Integer> seats;
         private int total_price;
-        private Viewing show;            //fk
-        private Customer customer_id;        //fk
+        private Viewing show;
+        private Customer customer_id;
 
 
         public Builder reservation_id(Long reservation_id) {

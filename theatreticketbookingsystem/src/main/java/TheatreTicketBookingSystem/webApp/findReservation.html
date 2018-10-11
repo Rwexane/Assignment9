@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title><Home></title>
+			<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+	<style type = "text/css">
+		body {
+			background-color: grey;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			
+			
+			display: inline;
+			
+			
+		}
+		
+		.navbar {
+			background-color: #333;
+			float: left;
+			min-width: 100%;
+			max-width: 100%;
+		}
+
+		li.bar{
+			float: left;			
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: white;
+			color: #000;
+		}
+		
+		.navRight{
+			float: right;
+		}
+		
+		.register{
+			background-color: blue;
+		}
+		
+		#title{
+			text-align: center;
+			color: white;
+		}
+		#row3 {
+			margin-top: 30px;
+			text-align: center
+		}
+		
+		.subtitle {
+			color: white;
+			text-align: center;
+		}
+
+		.tabbed {
+			padding-left: 4em;
+		}
+		
+		.message {
+			color: white;
+			text-align: center;
+			font-weight: strong;
+		}
+		
+		.col-sm-10{
+			color: black;
+		}
+		
+		</style>
+  
+		</head>
+		<body onload = "header(),footer()">		
+		<script src= "partialViews.js"></script>
+		<script src= "serverCalls.js"></script>
+		
+		<form method="GET" action= "" >
+		
+		<div id="header"></div>
+		
+		<center>
+			
+		<h3>
+		Please enter your email address:&nbsp;&nbsp;&nbsp;<input type="text" id="email"></input>
+		Please enter your password:&nbsp;&nbsp;&nbsp;<input type="text" id="password"></input>
+		<span class="tabbed"></span>
+		<div id = "reservations"></div>
+		<input type="button" id="reservationsBtn" value='Get reservations' onclick = "findReservation(document.getElementById('email').value, document.getElementById('password').value)"></input>
+		</h3>
+
+		<div id="reservations" style="display:none">
+			
+		</div>
+
+		</center>
+
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		<div id="footer"></div>
+		</form>
+		
+		
+
+		</body>
+	</html>

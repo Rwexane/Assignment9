@@ -4,9 +4,6 @@ import TheatreTicketBookingSystem.domain.Admin;
 
 import java.util.Map;
 
-/**
- * Created by Hasan on 10/29/2017.
- */
 public class AdminFactory {
 
     public static Admin getAdmin(Map<String, Object> values){

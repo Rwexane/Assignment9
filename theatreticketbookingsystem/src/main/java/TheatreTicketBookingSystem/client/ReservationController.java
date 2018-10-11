@@ -11,9 +11,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by Tristan on 2017/11/05.
- */
 @Controller
 @CrossOrigin(origins = "http://localhost")
 @RequestMapping(path="/reservation")

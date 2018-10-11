@@ -6,9 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 @Entity
 public class VVIP implements Seating_Class {
 
@@ -43,8 +40,6 @@ public class VVIP implements Seating_Class {
         private String class_name;
         private int price;
         private Long seat_id;
-//        private Recipe recipe;
-//        private Viewer viewer;
 
 
         public Builder class_name(String class_name) {
@@ -61,16 +56,6 @@ public class VVIP implements Seating_Class {
             this.seat_id = seat_id;
             return this;
         }
-
-//        public Builder recipe(Recipe recipe) {
-//            this.recipe = recipe;
-//            return this;
-//        }
-//
-//        public Builder viewer(Viewer viewer) {
-//            this.viewer = viewer;
-//            return this;
-//        }
 
         public VVIP build(){
             return new VVIP(this);

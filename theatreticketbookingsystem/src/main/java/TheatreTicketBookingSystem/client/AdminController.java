@@ -7,10 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import java.util.Set;
 
-/**
- * Created by Hasan on 10/29/2017.
- */
-
 @Controller
 @CrossOrigin(origins = "http://localhost")
 @RequestMapping(path="/admin")

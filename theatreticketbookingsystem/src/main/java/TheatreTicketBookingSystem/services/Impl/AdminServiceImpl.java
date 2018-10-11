@@ -9,11 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
-
-/**
- * Created by Hasan on 10/29/2017.
- */
-
 @Service
 public class AdminServiceImpl implements AdminService{
 

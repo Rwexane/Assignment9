@@ -8,11 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
-
-/**
- * Created by User on 2017/11/04.
- */
-
 @Service
 public class DocumentaryServiceImpl implements DocumentaryService{
 

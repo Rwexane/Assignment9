@@ -5,9 +5,6 @@ import TheatreTicketBookingSystem.domain.Reservation;
 
 import java.util.Map;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 public class DocumentaryFactory {
     public static Documentary getDocumentary(Map<String, Object> values){
         Documentary factoryDocumentary = new Documentary.Builder()

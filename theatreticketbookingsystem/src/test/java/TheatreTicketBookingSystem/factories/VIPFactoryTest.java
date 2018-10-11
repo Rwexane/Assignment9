@@ -9,9 +9,6 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by Tristan on 2017/11/04.
- */
 public class VIPFactoryTest {
 
     VIP seat;

@@ -7,9 +7,6 @@ import TheatreTicketBookingSystem.domain.Viewing;
 import java.util.ArrayList;
 import java.util.Map;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 public class ReservationFactory {
     public static Reservation getReservation(Map<String, Object> values){
         Reservation factoryReservation = new Reservation.Builder()

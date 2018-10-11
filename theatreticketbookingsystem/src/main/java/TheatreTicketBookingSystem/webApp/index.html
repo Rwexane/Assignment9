@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title><Home></title>
+			<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+	
+	<style type = "text/css">
+		body {
+			background-color: grey;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			
+			
+			display: inline;
+			
+			
+		}
+		
+		.navbar {
+			background-color: #333;
+			float: left;
+			min-width: 100%;
+			max-width: 100%;
+		}
+
+		li.bar{
+			float: left;			
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: white;
+			color: #000;
+		}
+		
+		.navRight{
+			float: right;
+		}
+		
+		.register{
+			background-color: blue;
+		}
+		
+		#title{
+			text-align: center;
+			color: white;
+		}
+		
+		</style>
+  
+		</head>
+		<body onload = "header(),footer()">		
+		<script src= "partialViews.js"></script>
+		<?html?>
+		<form method="GET" action= "<?html ?>" >
+		
+		<div id="header"></div>
+		<div id="movies">
+
+		<center>
+		<h1>Top Charts</h1>
+
+		<table width="80%">
+			<tr>
+				<td><img src='images/Geostorm.jpg' width="300" height="500"><br><center><h3>Geostorm</h3><br></center></td>
+				<td><img src='images/IT.jpg' width="300" height="500"><br><center><h3>IT</h3><br></center></td>
+				<td><img src='images/JusticeLeague.jpg' width="300" height="500"><br><center><h3>Justice League</h3><br></center></td>
+			</tr>
+
+			<tr>
+				<td><img src='images/Kingsman.jpg' width="300" height="500"><br><center><h3>Kingsman 2</h3><br></center></td>
+				<td><img src='images/StarWars.jpg' width="300" height="500"><br><center><h3>Star Wars: The Last Jedi</h3><br></center></td>
+				<td><img src='images/Thor.jpg' width="300" height="500"><br><center><h3>Thor: Ragnarok</h3><br></center></td>
+			</tr>
+		</table>
+		</center>
+		</div>
+		<div id="footer"></div>
+		</form>
+		
+		
+
+		</body>
+	</html>

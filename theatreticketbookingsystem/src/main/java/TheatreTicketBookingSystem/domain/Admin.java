@@ -4,9 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-/**
- * Created by Hasan on 10/29/2017.
- */
 @Entity
 public class Admin {
     @Id

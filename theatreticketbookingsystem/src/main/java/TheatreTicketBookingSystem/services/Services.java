@@ -1,9 +1,5 @@
 package TheatreTicketBookingSystem.services;
 
-/**
- * Created by User on 2017/11/04.
- */
-
 import java.util.Set;
 
 public interface Services<E,ID> {

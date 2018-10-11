@@ -4,19 +4,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.ArrayList;
-
-/**
- * Created by Hasan on 10/31/2017.
- */
 @Entity
 public class Seating_Plan {
     @Id
     @GeneratedValue
-    protected Long seat_plan_id;   //pk
+    protected Long seat_plan_id;
     protected int seats_booked;
     protected int seats_avail;
     protected ArrayList<Integer> seats;
-    protected int show_id;        //fk
+    protected int show_id;
 
     public Long getSeat_plan_id() {
         return seat_plan_id;
@@ -48,11 +44,11 @@ public class Seating_Plan {
     }
 
     public static class Builder{
-        private Long seat_plan_id;   //pk
+        private Long seat_plan_id;
         private int seats_booked;
         private int seats_avail;
         private ArrayList<Integer> seats;
-        private int show_id;        //fk
+        private int show_id;
 
 
         public Builder seat_plan_id(Long seat_plan_id) {

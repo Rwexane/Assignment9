@@ -11,9 +11,6 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by Tristan on 2017/11/04.
- */
 public class Seating_PlanFactoryTest {
 
     List<Integer> seats;

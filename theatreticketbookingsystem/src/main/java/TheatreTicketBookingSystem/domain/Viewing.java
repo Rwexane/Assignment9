@@ -1,14 +1,10 @@
 package TheatreTicketBookingSystem.domain;
 
 
-import javax.faces.convert.DateTimeConverter;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 @Entity
 public class Viewing {
     @Id
@@ -46,13 +42,6 @@ public class Viewing {
         return scifi;
     }
 
-
-//    private List<? extends Seating_Class> seats;
-//
-//    public List<? extends Seating_Class> getSeats() {
-//        return seats;
-//    }
-
     public Long getId() {
         return id;
     }
@@ -70,9 +59,6 @@ public class Viewing {
         return time;
     }
 
-//    public int getSeat_plan_id() {
-//        return seat_plan_id;
-//    }
     public Viewing() {
         //this.show_date = new Date();
     }
@@ -85,7 +71,6 @@ public class Viewing {
         this.action=builder.action;
         this.documentary=builder.documentary;
         this.scifi=builder.scifi;
-       // this.seats = builder.seats;
     }
 
     public static class Builder{
@@ -118,11 +103,6 @@ public class Viewing {
             return this;
         }
 
-//        public Builder recipe(Recipe recipe) {
-//            this.recipe = recipe;
-//            return this;
-//        }
-//
         public Builder action(Action action) {
             this.action = action;
             return this;

@@ -7,9 +7,6 @@ import TheatreTicketBookingSystem.domain.Viewing;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 public class ActionFactory {
 
     public static Action getAction(Map<String, Object> values){

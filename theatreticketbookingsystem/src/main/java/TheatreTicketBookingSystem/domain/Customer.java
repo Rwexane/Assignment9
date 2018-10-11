@@ -1,15 +1,10 @@
 package TheatreTicketBookingSystem.domain;
 
-import com.google.gson.Gson;
-import org.springframework.boot.json.GsonJsonParser;
-
-import javax.json.Json;
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.List;
 
-/**
- * Created by Hasan on 10/31/2017.
- */
 @Entity
 public class Customer {
     @Id
