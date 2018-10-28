@@ -1,0 +1,115 @@
+h1{
+	font-family: Arial;
+	font-size:48px;
+	color:#F9E79F;
+	text-align: left;
+}
+
+body{
+	font-family: Arial;
+	font-size:16px;
+	color:#F9E79F;
+	text-align: center;
+}
+
+#page-wrap {
+	 text-align:left;
+     width: 800px;
+     margin: 0 auto;
+	 border:1px solid #000;
+}
+
+td{
+	width:200px;
+	text-align:center;
+	height:40px;
+}
+
+
+a{
+	color:#F9E79F;
+	text-decoration:none;
+}
+
+table{
+	border-radius:5px;
+	align:center
+}
+
+a:hover{
+	text-decoration:none;
+	color:#4db8ff;
+	
+}
+
+.menu-background{
+	background-color:#2C3B4E;
+}
+
+.footer{
+	background-color:#0778BE;
+	width:1121px;
+	height:40px;
+}
+
+#menu{
+	width:1121px;
+	height:40px;
+}
+
+#menu {
+	
+	border-right:1px solid #fff;
+	
+}
+
+a :hover{
+	width:200px;
+	height:50px;
+}
+
+td:link{
+	width:200px;
+	border-right:1px solid #fff;
+	height:40px;
+}
+
+
+td:visited{
+	background-color:#D15A9A;
+	height:40px;
+	width:200px;
+}
+
+
+
+td:hover{
+	background-color:#990000;
+	width:200px;
+	height:40px;
+	font-weight:bold;
+}
+
+td:active{
+	background-color:#D15A9A;
+	width:200px;
+	height:40px;
+}
+
+td:highlighted	{
+	background-color:#D15A9A;
+	width:200px;
+	height:40px;
+}
+
+.itemText{
+	color:#C0C0C0;
+	font-weight:bold;
+}
+
+.itemText:hover{
+	color:#0778BE;
+		font-weight:bold;
+}
+
+

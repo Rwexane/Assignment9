@@ -1,0 +1,26 @@
+.Holder{
+	width: 1000px;
+	margin:20px auto;
+	overflow:auto;
+}
+
+.Poster {
+	left: 0px;
+	width:990px;
+	height:auto;
+	text-align: center;
+}
+
+.ShowDtl {
+	width:300px;
+	height:auto;
+	text-align:left;
+	padding-bottom: 20px;
+}
+
+.Times{
+	width: 900px;
+	text-align: center;
+	border-style: double;
+	font-family: Technical;
+}
